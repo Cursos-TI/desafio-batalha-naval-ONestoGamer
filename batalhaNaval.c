@@ -36,5 +36,79 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
 
+    printf("Bem-vindo ao jogo da Batalha Naval!\n");
+    printf("-------------------------------\n");
+    printf("Tabuleiro:\n");
+
+    // Inicialização do tabuleiro
+    char tabuleiro[10][10];
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            tabuleiro[i][j] = '0'; // Água
+        }
+    }
+    // Definição dos navios no tabuleiro
+        
+    tabuleiro[2][3] = '3';
+    tabuleiro[2][4] = '3';
+    tabuleiro[2][5] = '3';
+    tabuleiro[4][7] = '3';
+    tabuleiro[5][7] = '3';
+    tabuleiro[6][7] = '3';
+
+    // Impressão do tabuleiro
+    printf("   A B C D E F G H I J\n");
+    printf("1  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[0][j]);
+    }
+    printf("\n");   
+    printf("2  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[1][j]);
+    }
+    printf("\n");
+    printf("3  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[2][j]);
+    }
+    printf("\n");
+    printf("4  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[3][j]);
+    }
+    printf("\n");
+    printf("5  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[4][j]);
+    }
+    printf("\n");
+    printf("6  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[5][j]);
+    }
+    printf("\n");
+    printf("7  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[6][j]);
+    }
+    printf("\n");
+    printf("8  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[7][j]);
+    }
+    printf("\n");
+    printf("9  ");
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[8][j]);
+    }
+    printf("\n");
+    printf("10 ");  
+    for (int j = 0; j < 10; j++) {
+        printf("%c ", tabuleiro[9][j]);
+    }
+    printf("\n");
+
+  
     return 0;
 }
